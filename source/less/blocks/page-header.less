@@ -1,0 +1,31 @@
+.page-header {
+  background-color: #12033c;
+}
+
+.page-header__row {
+  padding-top: 21px;
+  padding-bottom: 19px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.page-header__phone {
+  .color-semitransparent();
+  .link-reset();
+  position: relative;
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background-image: url(../img/topmenu-phone.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 18px 18px;
+  }
+}
