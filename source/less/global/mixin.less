@@ -25,23 +25,24 @@
   resize: none;
 }
 
-.color-semitransparent() {
-  color: rgba(255, 255, 255, 0.5);
+
+.color-link(@color, @opacity: 1) {
+  color: rgba(@color, @opacity);
 
   cursor: pointer;
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(@color, 0.3);
   }
 
   @media (min-width: @desktop-width) {
     &:hover,
     &:focus {
-      color: rgba(255, 255, 255, 1);
+      color: rgba(@color, 1);
     }
 
     &:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: rgba(@color, 0.3);
     }
   }
 }

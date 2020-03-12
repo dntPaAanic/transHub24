@@ -3,29 +3,51 @@
 }
 
 .page-header__row {
-  padding-top: 21px;
-  padding-bottom: 19px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-top: 21px;
+  padding-bottom: 19px;
+}
+
+.page-header__language-preference {
+  margin-right: 7%;
+}
+
+.page-header__phone-wrapper {
+  margin-right: 4%;
+  min-width: 125px;
 }
 
 .page-header__phone {
-  .color-semitransparent();
-  .link-reset();
   position: relative;
 
+  font-size: 14px;
+  line-height: 17px;
+
+  .color-link(#ffffff, 0.5);
+  .link-reset();
+
   &::after {
-    position: absolute;
-    display: block;
     content: "";
+    position: absolute;
     top: 0;
     left: 0;
+
+    display: none;
     width: 45px;
     height: 45px;
+
     background-image: url(../img/topmenu-phone.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 18px 18px;
+  }
+}
+
+.page-header__logo {
+  img {
+    width: 104px;
+    height: 40px;
   }
 }
