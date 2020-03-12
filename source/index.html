@@ -41,8 +41,8 @@
         </div>
       </div>
 
-      <div class="page-header__row main-nav">
-        <div class="page-header__wrapper container">
+      <div class="page-header__row">
+        <nav class="page-header__wrapper main-nav main-nav--opened main-nav--nojs container">
           <div class="main-nav__wrapper">
             <a class="page-header__logo">
               <picture>
@@ -55,7 +55,7 @@
             </button>
           </div>
 
-          <nav class="main-menu">
+          <div class="main-nav__menu-wrapper">
             <ul class="main-menu__list">
               <li class="main-menu__item"><a href="#" class="main-menu__link main-menu--dropdown">Найти перевозчика</a></li>
               <li class="main-menu__item"><a href="#" class="main-menu__link">Поиск груза</a></li>
@@ -63,13 +63,17 @@
               <li class="main-menu__item"><a href="#" class="main-menu__link">Грузоотправители</a></li>
               <li class="main-menu__item"><a href="#" class="main-menu__link main-menu--dropdown">Покупка и аренда техники</a></li>
             </ul>
-          </nav>
 
-          <div class="main-nav__inner">
-            <a href="#" class="page-header__link">Разместить груз</a>
+
+            <div class="main-nav__inner">
+              <a href="#" class="page-header__link">Разместить груз</a>
+            </div>
           </div>
-        </div>
+
+        </nav>
       </div>
     </header>
+
+  <script src="js/script.min.js"></script>
   </body>
 </html>

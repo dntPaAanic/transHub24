@@ -19,8 +19,6 @@
   .link-reset();
 }
 
-
-
 @media (min-width: @desktop-width) {
   .main-menu--dropdown {
     position: relative;
@@ -47,6 +45,16 @@
 
   .main-menu__link:active.main-menu--dropdown::after {
     border-color: rgba(#ffffff, 0.3);
+  }
+}
+
+@media (min-width: 0) and (max-width: @desktop-width - 1) {
+  .main-menu__list {
+    margin-left: 20px;
+  }
+
+  .main-menu__item {
+    padding: 20px 0;
   }
 }
 

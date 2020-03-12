@@ -70,13 +70,20 @@
   .color-link(#20afff);
   .link-reset();
 
-  &:hover,
-  &:focus {
-    border-bottom-color: rgba(#20afff, 0.7);
-  }
-
-  &:focus {
+  &:active {
     border-bottom-color: rgba(#20afff, 0.3);
+  }
+}
 
+@media (min-width: @desktop-width) {
+  .page-header__link {
+    &:hover,
+    &:focus {
+      border-bottom-color: rgba(#20afff, 0.7);
+    }
+
+    &:active {
+      border-bottom-color: rgba(#20afff, 0.3);
+    }
   }
 }
