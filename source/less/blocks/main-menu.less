@@ -1,11 +1,9 @@
-.main-menu__list {
-  .ul-reset();
-}
-
-.main-menu__list {
+.main-menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  .ul-reset();
 }
 
 .main-menu__item {
@@ -49,7 +47,7 @@
 }
 
 @media (min-width: 0) and (max-width: @desktop-width - 1) {
-  .main-menu__list {
+  .main-menu {
     margin-left: 20px;
   }
 
@@ -57,4 +55,3 @@
     padding: 20px 0;
   }
 }
-

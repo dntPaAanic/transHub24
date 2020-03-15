@@ -56,7 +56,7 @@
           </div>
 
           <div class="main-nav__menu-wrapper">
-            <ul class="main-menu__list">
+            <ul class="main-menu">
               <li class="main-menu__item"><a href="#" class="main-menu__link main-menu--dropdown">Найти перевозчика</a></li>
               <li class="main-menu__item"><a href="#" class="main-menu__link">Поиск груза</a></li>
               <li class="main-menu__item"><a href="#" class="main-menu__link">Перевозчики</a></li>
@@ -93,44 +93,71 @@
       </section>
 
       <section class="slider">
-        <div class="slider__container swiper-container">
-          <div class="slider__wrapper swiper-wrapper">
-            <div class="swiper-slide slider__slide">
-              <div class="slider__content container">
-                <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
-                <div class="slider__inner">
-                  <div class="slider__promo">
-                    <div class="slider__image-wrapper">
-                      <picture>
-                        <source type="image/webp" srcset="img/slider-image@1x.webp 1x, img/slider-image@2x.webp 2x">
-                        <img src="img/slider-image@1x.png" srcset="img/slider-image@2x.png" width="756" height="334" alt="Изображение из личного кабинета пользователя">
-                      </picture>
+        <div class="slider__section-wrapper">
+          <div class="slider__container swiper-container">
+            <div class="slider__wrapper swiper-wrapper">
+              <div class="swiper-slide slider__slide">
+                <div class="slider__content container">
+                  <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
+                  <div class="slider__inner">
+                    <div class="slider__promo">
+                      <div class="slider__image-wrapper">
+                        <picture>
+                          <source type="image/webp" srcset="img/slider-image@1x.webp 1x, img/slider-image@2x.webp 2x">
+                          <img src="img/slider-image@1x.png" srcset="img/slider-image@2x.png" width="756" height="334" alt="Изображение из личного кабинета пользователя">
+                        </picture>
+                      </div>
+
+                      <p class="slider__photo-description">
+                        Получите удобный инструмент размещения заявок на перевозку грузов и их отслеживания
+                      </p>
                     </div>
 
+                    <div class="slider__log-in-form log-in-form">
+                      <form action="" class="log-in-form__form" method="post">
+                        <ul>
+                          <li>
+                            <label for="email-tel">Email или Номер телефона</label>
+                            <input id="email-tel" type="text" name="email-tel" required>
+                          </li>
+                          <li>
+                            <label for="password">Пароль</label>
+                            <input id="password" type="password" name="password" required>
+                          </li>
+                        </ul>
+
+                        <input type="submit" class="button log-in-form__submit" placeholder="Регистрация">
+
+
+                      </form>
+
+                    </div>
                   </div>
+
+
                 </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="slider__content container">
+                  <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
 
 
+                </div>
+              </div>
+              <div class="swiper-slide slider__slide">
+                <div class="slider__content container">
+                  <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
+
+
+                </div>
               </div>
             </div>
-            <div class="swiper-slide slider__slide">
-              <div class="slider__content container">
-                <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
 
 
-              </div>
-            </div>
-            <div class="swiper-slide slider__slide">
-              <div class="slider__content container">
-                <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
-
-
-              </div>
-            </div>
           </div>
-
           <div class="slider__pagination"></div>
         </div>
+
       </section>
 
 
@@ -138,8 +165,22 @@
 
     <script src="js/script.min.js"></script>
     <script src="js/swiper.js"></script>
-    <script src="js/slider.js"></script>
+<!--    <script src="js/slider.js"></script>-->
   <script>
+
+    var mySwiper = new Swiper ('.slider__container', {
+      // Optional parameters
+      loop: true,
+      simulateTouch: false,
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 60,
+      // If we need pagination
+      pagination: {
+        el: '.slider__pagination',
+        clickable: true
+      }
+    });
 
   </script>
   </body>
