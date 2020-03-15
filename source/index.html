@@ -83,15 +83,58 @@
 
       <section class="introduce">
         <div class="introduce__wrapper container">
-          <h2 class="introduce__title">Компания Transhub 24</h2>
+          <h2 class="introduce__title">Компания Transhub&nbsp;24</h2>
           <p class="introduce__description">
             Наша цель — свести контакты грузоперевозчиков и грузовладельцев в одном месте, сделав их максимально удобными.
           </p>
-        </div>
 
+          <a href="#" class="button introduce__button">Найти перевозчика</a>
+        </div>
       </section>
+
+      <section class="slider">
+        <div class="slider__wrapper">
+          <div class="slider__inner">
+            <div class="slider__item">
+              <div class="slider__content container">
+                <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
+
+
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content container">
+                <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
+
+
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content container">
+                <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </main>
 
-  <script src="js/script.min.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slider.js"></script>
+  <script>
+    $('.slider__inner').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true
+    });
+  </script>
   </body>
 </html>

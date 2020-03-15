@@ -1,23 +1,51 @@
 .introduce {
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 23px;
-  padding-right: 10px;
   background-color: #0099ef;
 }
 
+.introduce__wrapper {
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 116px;
+  padding-left: 10px;
+}
+
 .introduce__title {
+  margin: 0;
+
   font-weight: 700;
   font-size: 80px;
   line-height: 98px;
   color: #ffffff;
-  margin: 0;
 }
 
 .introduce__description {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  max-width: 791px;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 58px;
+
   font-size: 24px;
   line-height: 140%;
-  margin: 0;
+}
+
+.introduce__button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: #ffffff;
+
+  .color-link(#004460);
+}
+
+@media (min-width: 0) and (max-width: @tablet-width - 1) {
+  .introduce__title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+}
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width - 1) {
+
 }
