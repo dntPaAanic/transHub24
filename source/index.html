@@ -131,15 +131,12 @@
                         <input type="submit" class="button log-in-form__log-in" value="Вход">
                         <a href="#" class="button log-in-form__forgot-password">Забыли пароль?</a>
 
-
                       </form>
-
                     </div>
                   </div>
-
-
                 </div>
               </div>
+
               <div class="swiper-slide slider__slide">
                 <div class="slider__content container">
                   <h3 class="slider__header">Авторизуйтесь, в личный кабинет грузоотправителя</h3>
@@ -155,10 +152,15 @@
                 </div>
               </div>
             </div>
-
-
           </div>
-          <div class="slider__pagination"></div>
+
+          <div class="slider__button-wrapper">
+            <div class="slider__button slider__button--prev"></div>
+            <div class="slider__button slider__button--next"></div>
+          </div>
+
+          <div class="slider__pagination container"></div>
+
         </div>
 
       </section>
@@ -172,13 +174,14 @@
   <script>
 
     var mySwiper = new Swiper ('.slider__container', {
-      // Optional parameters
       loop: true,
-      simulateTouch: false,
       slidesPerView: 'auto',
       centeredSlides: true,
       spaceBetween: 60,
-      // If we need pagination
+      navigation: {
+        nextEl: '.slider__button--next',
+        prevEl: '.slider__button--prev',
+      },
       pagination: {
         el: '.slider__pagination',
         clickable: true
