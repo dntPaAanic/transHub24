@@ -76,12 +76,13 @@
 
     <main>
       <h1 class="visually-hidden">Компания Transhub 24</h1>
-      <section class="promo">
+      <div class="promo">
         <div class="promo__wrapper">
         </div>
-      </section>
+      </div>
 
       <section class="introduce">
+        <h2 class="visually-hidden">Компания Transhub 24</h2>
         <div class="introduce__wrapper container">
           <h2 class="introduce__title">Компания Transhub&nbsp;24</h2>
           <p class="introduce__description">
@@ -93,7 +94,8 @@
       </section>
 
       <section class="slider">
-        <div class="slider__section-wrapper">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <div class="slider__section-wrapper js-slider">
           <div class="slider__container swiper-container">
             <div class="slider__wrapper swiper-wrapper">
               <div class="swiper-slide slider__slide">
@@ -162,8 +164,12 @@
       </section>
 
       <section class="dispatch">
+        <h2 class="visually-hidden">Как отправить груз?</h2>
         <div class="dispatch__wrapper">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur eaque in laborum perspiciatis qui quis ratione saepe sapiente soluta! Amet debitis fuga fugit harum iste qui reiciendis saepe tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolorem dolorum magni maiores nobis, nostrum, nulla provident, quae quas quibusdam repudiandae ullam vero vitae voluptatem voluptates. Accusantium dicta totam unde!
+          <p class="dispatch__header">
+            5 шагов для отправки груза через сайт TransHub24
+          </p>
+
         </div>
 
       </section>
@@ -176,20 +182,66 @@
 <!--    <script src="js/slider.js"></script>-->
   <script>
 
-    var mySwiper = new Swiper ('.slider__container', {
-      loop: true,
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      spaceBetween: 60,
-      navigation: {
-        nextEl: '.slider__button--next',
-        prevEl: '.slider__button--prev',
-      },
-      pagination: {
-        el: '.slider__pagination',
-        clickable: true
-      }
-    });
+    // var mySwiper = new Swiper ('.slider__container', {
+    //   loop: true,
+    //   slidesPerView: 'auto',
+    //   centeredSlides: true,
+    //   spaceBetween: 60,
+    //   navigation: {
+    //     nextEl: '.slider__button--next',
+    //     prevEl: '.slider__button--prev',
+    //   },
+    //   pagination: {
+    //     el: '.slider__pagination',
+    //     clickable: true
+    //   }
+    // });
+
+
+    'use strict';
+
+    (function () {
+      var containers = document.querySelectorAll('.js-slider');
+
+      // eslint-disable-next-line consistent-return
+      var getPhotoSlider = function (slider) {
+        if (slider) {
+          var container = slider.querySelector('.swiper-container');
+          var slidesPerView = 1;
+          var spaceBetween = 0;
+          var next;
+          var prev;
+          var pagination;
+          if (slider.classList.contains('slider__section-wrapper')) {
+            slidesPerView = 'auto';
+            spaceBetween = 60;
+            next = slider.querySelector('.slider__button--next');
+            prev = slider.querySelector('.slider__button--prev');
+            pagination = slider.querySelector('.slider__pagination');
+          }
+          return new window.Swiper(container, {
+            slidesPerView: slidesPerView,
+            spaceBetween: spaceBetween,
+            loop: true,
+            centeredSlides: true,
+            navigation: {
+              nextEl: next,
+              prevEl: prev,
+            },
+            pagination: {
+              el: pagination,
+              clickable: true
+            },
+          });
+        }
+      };
+
+      containers.forEach(function (currentValue) {
+        getPhotoSlider(currentValue);
+      });
+
+
+    })();
 
   </script>
   </body>

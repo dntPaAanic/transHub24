@@ -1,10 +1,35 @@
 .dispatch {
-  padding-top: 100px;
+  padding-top: 73px;
   padding-bottom: 100px;
+
   background-color: #0099ef;
 }
 
 .dispatch__wrapper {
-  margin: 0 0 0 auto;
-  width: 1200px;
+  margin-left: 18.5%;
+}
+
+.dispatch__header {
+  width: 755px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+
+
+@media (min-width: 0) and (max-width: @tablet-width - 1) {
+  .dispatch__wrapper {
+    margin-left: 8%;
+    padding-right: 10px;
+  }
+
+  .dispatch__header {
+    width: 100%;
+
+    font-size: 23px;
+  }
 }
