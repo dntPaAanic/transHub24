@@ -244,8 +244,18 @@
               </div>
             </div>
 
-<!--            <div class="slider__button slider__button&#45;&#45;prev"></div>-->
-<!--            <div class="slider__button slider__button&#45;&#45;next"></div>-->
+            <div class="dispatch__slider-button-wrapper">
+              <button class="dispatch__slider-button dispatch__slider-button--prev">
+                <svg fill="#ffffff" fill-opacity="0.3" width="34" height="23">
+                  <use xlink:href="#icon-scnd-arrow-prev"></use>
+                </svg>
+              </button>
+              <button class="dispatch__slider-button dispatch__slider-button--next">
+                <svg fill="#ffffff" fill-opacity="0.3" width="34" height="23">
+                  <use xlink:href="#icon-scnd-arrow-next"></use>
+                </svg>
+              </button>
+            </div>
 
             <div class="dispatch__pagination"></div>
           </div>
@@ -306,6 +316,8 @@
             spaceBetween = 0;
             centeredSlides = false;
             pagination = slider.querySelector('.dispatch__pagination');
+            next = slider.querySelector('.dispatch__slider-button--next');
+            prev = slider.querySelector('.dispatch__slider-button--prev');
           }
           return new window.Swiper(container, {
             slidesPerView: slidesPerView,

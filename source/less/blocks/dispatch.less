@@ -96,6 +96,41 @@
   color: #004460;
 }
 
+.dispatch__slider-button-wrapper {
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  top: -128px;
+  right: 22%;
+  width: 120px;
+  justify-content: space-between;
+}
+
+.dispatch__slider-button {
+  display: block;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  svg {
+    &:active {
+      fill-opacity: 1;
+    }
+
+    @media (min-width: @desktop-width) {
+      &:hover,
+      &:focus {
+        fill-opacity: 0.7;
+      }
+
+      &:active {
+        fill-opacity: 1;
+      }
+    }
+  }
+}
+
 @media (min-width: 0) and (max-width: @tablet-width - 1) {
   .dispatch__wrapper {
     margin-left: 8%;
