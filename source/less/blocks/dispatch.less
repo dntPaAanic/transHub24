@@ -11,7 +11,7 @@
 
 .dispatch__header {
   max-width: 755px;
-  margin: 0 0 60px 21px;
+  margin: 0 0 41px 21px;
 
   font-weight: 700;
   font-size: 46px;
@@ -35,9 +35,10 @@
 .dispatch__slide {
   width: 346px;
   height: 346px;
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 30px;
   padding-top: 47px;
+  padding-right: 30px;
   padding-left: 47px;
 
   background: #ffffff;
@@ -45,26 +46,54 @@
 }
 
 .dispatch__slide.swiper-slide-active {
-  margin-top: 0;
+  margin-top: 20px;
   padding-bottom: 0;
 
   background: #20afff;
   box-shadow: 0 15px 40px rgba(0, 26, 46, 0.3);
 
-  .dispatch__image-wrapper {
+  .dispatch__slide-image-wrapper {
     svg {
-
+      fill: #ffffff;
     }
+  }
+
+  .dispatch__slide-header {
+    color: #ffffff;
+  }
+
+  .dispatch__slider-description {
+    color: #ffffff;
   }
 }
 
-.dispatch__image-wrapper {
+.dispatch__slide-image-wrapper {
   display: flex;
-  width: 90px;
+  justify-content: left;
+  align-items: flex-end;
+  width: 140px;
   height: 90px;
   overflow: hidden;
-  align-items: flex-end;
-  justify-content: left;
+}
+
+.dispatch__slide-header {
+  margin-top: 20px;
+  margin-bottom: 7px;
+
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 150%;
+  color: #004460;
+  letter-spacing: 0.02em;
+}
+
+.dispatch__slider-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-size: 16px;
+  line-height: 150%;
+  color: #004460;
 }
 
 @media (min-width: 0) and (max-width: @tablet-width - 1) {
