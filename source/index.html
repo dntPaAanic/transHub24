@@ -13,6 +13,9 @@
   </head>
 
   <body>
+<!--  <div style="display: none;">-->
+<!--    <include src="img/sprite.svg"></include>-->
+<!--  </div>-->
     <header class="page-header">
       <div class="page-header__row ">
         <div class="page-header__wrapper container">
@@ -170,6 +173,42 @@
             5 шагов для отправки груза через сайт TransHub24
           </p>
 
+          <div class="dispatch__section-wrapper js-slider">
+            <div class="dispatch__container swiper-container">
+              <div class="dispatch__inner swiper-wrapper">
+                <div class="swiper-slide dispatch__slide">
+                  <div class="dispatch__image-wrapper">
+                    <svg fill="#e33439" width="61" height="90">
+                      <use xlink:href="#icon-form"></use>
+                    </svg>
+                  </div>
+
+                </div>
+
+                <div class="swiper-slide dispatch__slide">
+
+
+                </div>
+                <div class="swiper-slide dispatch__slide">
+
+                </div>
+
+                <div class="swiper-slide dispatch__slide">
+
+                </div>
+
+                <div class="swiper-slide dispatch__slide">
+
+                </div>
+              </div>
+            </div>
+
+<!--            <div class="slider__button slider__button&#45;&#45;prev"></div>-->
+<!--            <div class="slider__button slider__button&#45;&#45;next"></div>-->
+
+            <div class="dispatch__pagination"></div>
+          </div>
+
         </div>
 
       </section>
@@ -212,6 +251,8 @@
           var next;
           var prev;
           var pagination;
+          var loop = true;
+          var centeredSlides = true;
           if (slider.classList.contains('slider__section-wrapper')) {
             slidesPerView = 'auto';
             spaceBetween = 60;
@@ -219,11 +260,17 @@
             prev = slider.querySelector('.slider__button--prev');
             pagination = slider.querySelector('.slider__pagination');
           }
+          if (slider.classList.contains('dispatch__section-wrapper')) {
+            slidesPerView = 'auto';
+            spaceBetween = 0;
+            centeredSlides = false;
+            pagination = slider.querySelector('.dispatch__pagination');
+          }
           return new window.Swiper(container, {
             slidesPerView: slidesPerView,
             spaceBetween: spaceBetween,
-            loop: true,
-            centeredSlides: true,
+            loop: loop,
+            centeredSlides: centeredSlides,
             navigation: {
               nextEl: next,
               prevEl: prev,

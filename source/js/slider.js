@@ -19,6 +19,9 @@
         prev = slider.querySelector('.slider__button--prev');
         pagination = slider.querySelector('.slider__pagination');
       }
+      if (slider.classList.contains('dispatch__section-wrapper')) {
+
+      }
       return new window.Swiper(container, {
         slidesPerView: slidesPerView,
         spaceBetween: spaceBetween,
