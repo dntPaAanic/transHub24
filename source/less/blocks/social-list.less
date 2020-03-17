@@ -1,0 +1,51 @@
+.social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 190px;
+}
+
+.social-list__item {
+  margin-bottom: 17px;
+  margin-left: 20px;
+}
+
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  height: 39px;
+  overflow: hidden;
+
+  background-color: #ffffff;
+  border-radius: 5px;
+
+  &:active {
+    background-color: #00aeef;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:hover,
+    &:focus {
+      background-color: rgba(#00aeef, 0.7);
+
+      svg {
+        fill: #ffffff;
+      }
+    }
+    &:active {
+      background-color: #00aeef;
+
+      svg {
+        fill: #ffffff;
+      }
+    }
+
+  }
+}
