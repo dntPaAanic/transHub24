@@ -12,6 +12,8 @@
       var next;
       var prev;
       var pagination;
+      var loop = true;
+      var centeredSlides = true;
       if (slider.classList.contains('slider__section-wrapper')) {
         slidesPerView = 'auto';
         spaceBetween = 60;
@@ -20,13 +22,18 @@
         pagination = slider.querySelector('.slider__pagination');
       }
       if (slider.classList.contains('dispatch__section-wrapper')) {
-
+        slidesPerView = 'auto';
+        spaceBetween = 30;
+        centeredSlides = false;
+        pagination = slider.querySelector('.dispatch__pagination');
+        next = slider.querySelector('.dispatch__slider-button--next');
+        prev = slider.querySelector('.dispatch__slider-button--prev');
       }
       return new window.Swiper(container, {
         slidesPerView: slidesPerView,
         spaceBetween: spaceBetween,
-        loop: true,
-        centeredSlides: true,
+        loop: loop,
+        centeredSlides: centeredSlides,
         navigation: {
           nextEl: next,
           prevEl: prev,
@@ -45,5 +52,3 @@
 
 
 })();
-
-

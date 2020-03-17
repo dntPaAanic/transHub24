@@ -261,88 +261,66 @@
           </div>
 
         </div>
-
       </section>
-
-
     </main>
+
+    <footer class="page-footer">
+        <div class="page-footer__row">
+          <div class="page-footer__row-inner container">
+            <div class="page-footer__column">
+              <ul class="page-footer__list">
+                <li class="page-footer__item">Телефон: +7 (87922) 2-63-10</li>
+                <li class="page-footer__item">
+                  Адрес: 357212, Ставропольский край,
+                  г. Минеральные воды,
+                  <p>
+                    ул. 50 лет Октября, д.42, 2 этаж
+                  </p>
+
+                </li>
+                <li class="page-footer__item">
+                  &copy; 2018 компания Transhub24 Портал для поиска перевозчиков и грузоотправителей.
+                </li>
+              </ul>
+            </div>
+
+            <div class="page-footer__column">
+              <p class="page-footer__caption">Найти перевозчика</p>
+              <ul class="page-footer__list">
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Автомобильные перевозки</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Воздушные перевозки</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Ж/Д перевозки</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Морские перевозки</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Найти груз</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__column">
+              <p class="page-footer__caption">О компании</p>
+              <ul class="page-footer__list">
+                <li class="page-footer__item"><a href="#" class="page-footer__link">О нас</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Статьи</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Справочники</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Продажа и аренда</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="page-footer__column">
+              <p class="page-footer__caption">Мы в соц.сетях</p>
+              <ul class="page-footer__list">
+                <li class="page-footer__item"><a href="#" class="page-footer__link">О нас</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Статьи</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Справочники</a></li>
+                <li class="page-footer__item"><a href="#" class="page-footer__link">Продажа и аренда</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+    </footer>
 
     <script src="js/script.min.js"></script>
     <script src="js/swiper.js"></script>
-<!--    <script src="js/slider.js"></script>-->
-  <script>
+    <script src="js/slider.js"></script>
 
-    // var mySwiper = new Swiper ('.slider__container', {
-    //   loop: true,
-    //   slidesPerView: 'auto',
-    //   centeredSlides: true,
-    //   spaceBetween: 60,
-    //   navigation: {
-    //     nextEl: '.slider__button--next',
-    //     prevEl: '.slider__button--prev',
-    //   },
-    //   pagination: {
-    //     el: '.slider__pagination',
-    //     clickable: true
-    //   }
-    // });
-
-
-    'use strict';
-
-    (function () {
-      var containers = document.querySelectorAll('.js-slider');
-
-      // eslint-disable-next-line consistent-return
-      var getPhotoSlider = function (slider) {
-        if (slider) {
-          var container = slider.querySelector('.swiper-container');
-          var slidesPerView = 1;
-          var spaceBetween = 0;
-          var next;
-          var prev;
-          var pagination;
-          var loop = true;
-          var centeredSlides = true;
-          if (slider.classList.contains('slider__section-wrapper')) {
-            slidesPerView = 'auto';
-            spaceBetween = 60;
-            next = slider.querySelector('.slider__button--next');
-            prev = slider.querySelector('.slider__button--prev');
-            pagination = slider.querySelector('.slider__pagination');
-          }
-          if (slider.classList.contains('dispatch__section-wrapper')) {
-            slidesPerView = 'auto';
-            spaceBetween = 30;
-            centeredSlides = false;
-            pagination = slider.querySelector('.dispatch__pagination');
-            next = slider.querySelector('.dispatch__slider-button--next');
-            prev = slider.querySelector('.dispatch__slider-button--prev');
-          }
-          return new window.Swiper(container, {
-            slidesPerView: slidesPerView,
-            spaceBetween: spaceBetween,
-            loop: loop,
-            centeredSlides: centeredSlides,
-            navigation: {
-              nextEl: next,
-              prevEl: prev,
-            },
-            pagination: {
-              el: pagination,
-              clickable: true
-            },
-          });
-        }
-      };
-
-      containers.forEach(function (currentValue) {
-        getPhotoSlider(currentValue);
-      });
-
-
-    })();
-
-  </script>
   </body>
 </html>
