@@ -19,64 +19,71 @@
     <include src="build/img/sprite.svg"></include>
   </div>
     <header class="page-header">
-      <div class="page-header__row ">
-        <div class="page-header__wrapper container">
-          <ul class="page-header__language-preference language-preference">
-            <li class="language-preference__item"><a href="#" class="language-preference__link">EN</a></li>
-            <li class="language-preference__item"><a class="language-preference__link language-preference__link--selected">RU</a></li>
-          </ul>
-
-          <div class="page-header__inner page-header__phone-wrapper">
-            <a href="tel:+78792226310" class="page-header__phone">+7 (87922) 2-63-10</a>
-          </div>
-
-          <nav class="about-company">
-            <ul class="about-company__list">
-              <li class="about-company__item"><a href="#" class="about-company__link">О компании</a></li>
-              <li class="about-company__item"><a href="#" class="about-company__link">Рекламодателям</a></li>
-              <li class="about-company__item"><a href="#" class="about-company__link">База знаний</a></li>
-              <li class="about-company__item"><a href="#" class="about-company__link">Контакты</a></li>
+      <div class="page-header__main-wrapper">
+        <div class="page-header__row ">
+          <div class="page-header__wrapper container">
+            <ul class="page-header__language-preference language-preference">
+              <li class="language-preference__item"><a href="#" class="language-preference__link">EN</a></li>
+              <li class="language-preference__item"><a class="language-preference__link language-preference__link--selected">RU</a></li>
             </ul>
-          </nav>
 
-          <ul class="log-in">
-            <li class="log-in__item"><a href="#" class="log-in__link">Вход</a></li>
-            <li class="log-in__item"><a href="#" class="log-in__link">Регистрация</a></li>
-          </ul>
+            <div class="page-header__inner page-header__phone-wrapper">
+              <a href="tel:+78792226310" class="page-header__phone">+7 (87922) 2-63-10</a>
+            </div>
+
+            <nav class="about-company">
+              <ul class="about-company__list">
+                <li class="about-company__item"><a href="#" class="about-company__link">О компании</a></li>
+                <li class="about-company__item"><a href="#" class="about-company__link">Рекламодателям</a></li>
+                <li class="about-company__item"><a href="#" class="about-company__link">База знаний</a></li>
+                <li class="about-company__item"><a href="#" class="about-company__link">Контакты</a></li>
+              </ul>
+            </nav>
+
+            <ul class="log-in">
+              <li class="log-in__item"><a href="#" class="log-in__link">Вход</a></li>
+              <li class="log-in__item"><a href="#" class="log-in__link">Регистрация</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="page-header__row">
+          <nav class="page-header__wrapper main-nav main-nav--opened main-nav--nojs container">
+            <div class="main-nav__wrapper">
+              <a class="page-header__logo">
+                <picture>
+                  <source type="image/webp" srcset="img/logo-page-header@1x.webp 1x, img/logo-page-header@2x.webp 2x">
+                  <img class="page-header__logo-img" src="img/logo-page-header@1x.png" srcset="img/logo-page-header@2x.png" width="104" height="40" alt="Логотип компании Transhub24">
+                </picture>
+                <picture>
+                  <source type="image/webp" srcset="img/logo-page-header-color@1x.webp 1x, img/logo-page-header-color@2x.webp 2x">
+                  <img class="page-header__logo-img-color" src="img/logo-page-header-color@1x.png" srcset="img/logo-page-header-color@2x.png" width="104" height="40" alt="Логотип компании Transhub24">
+                </picture>
+              </a>
+              <button class="main-nav__toggle">
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+            </div>
+
+            <div class="main-nav__menu-wrapper">
+              <ul class="main-menu">
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu--dropdown">Найти перевозчика</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Поиск груза</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Перевозчики</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">Грузоотправители</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link main-menu--dropdown">Покупка и аренда техники</a></li>
+              </ul>
+
+
+              <div class="main-nav__inner">
+                <a href="#" class="page-header__link">Разместить груз</a>
+              </div>
+            </div>
+
+          </nav>
         </div>
       </div>
 
-      <div class="page-header__row">
-        <nav class="page-header__wrapper main-nav main-nav--opened main-nav--nojs container">
-          <div class="main-nav__wrapper">
-            <a class="page-header__logo">
-              <picture>
-                <source type="image/webp" srcset="img/logo-page-header@1x.webp 1x, img/logo-page-header@2x.webp 2x">
-                <img src="img/logo-page-header@1x.png" srcset="img/logo-page-header@2x.png" width="104" height="40" alt="Логотип компании Transhub24">
-              </picture>
-            </a>
-            <button class="main-nav__toggle">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-          </div>
-
-          <div class="main-nav__menu-wrapper">
-            <ul class="main-menu">
-              <li class="main-menu__item"><a href="#" class="main-menu__link main-menu--dropdown">Найти перевозчика</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Поиск груза</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Перевозчики</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link">Грузоотправители</a></li>
-              <li class="main-menu__item"><a href="#" class="main-menu__link main-menu--dropdown">Покупка и аренда техники</a></li>
-            </ul>
-
-
-            <div class="main-nav__inner">
-              <a href="#" class="page-header__link">Разместить груз</a>
-            </div>
-          </div>
-
-        </nav>
-      </div>
     </header>
 
     <main>
@@ -405,6 +412,5 @@
     <script src="js/script.js"></script>
     <script src="js/swiper.js"></script>
     <script src="js/slider.js"></script>
-
   </body>
 </html>

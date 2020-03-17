@@ -15,3 +15,15 @@ navToggle.addEventListener('click', function() {
   }
 });
 
+function scrollMenu() {
+  var header = document.querySelector(".page-header");
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 740 && window.innerWidth >= 1440 || window.pageYOffset > 0 && window.innerWidth < 1440) {
+      header.classList.add("page-header--scrolled");
+    } else {
+      header.classList.remove("page-header--scrolled");
+    }
+  });
+}
+
+scrollMenu();
