@@ -10,6 +10,8 @@
     <link rel="preload" href="fonts/AvenirNextCyr-Medium.woff2" as="font">
     <link rel="preload" href="fonts/AvenirNextCyr-Demi.woff2" as="font">
     <link rel="preload" href="fonts/AvenirNextCyr-Bold.woff2" as="font">
+    <script>document.createElement("picture");</script>
+    <script src="js/picturefill.min.js" async></script>
   </head>
 
   <body>
@@ -267,19 +269,22 @@
     <footer class="page-footer">
         <div class="page-footer__row">
           <div class="page-footer__row-inner container">
-            <div class="page-footer__column">
-              <ul class="page-footer__list">
-                <li class="page-footer__item">Телефон: +7 (87922) 2-63-10</li>
-                <li class="page-footer__item">
+            <div class="page-footer__column page-footer__column--mobile">
+              <ul class="page-footer__address-list">
+                <li class="page-footer__address-item">Телефон: +7 (87922) 2-63-10</li>
+                <li class="page-footer__address-item">
                   Адрес: 357212, Ставропольский край,
-                  г. Минеральные воды,
+                  г. Минеральные Воды,
                   <p>
-                    ул. 50 лет Октября, д.42, 2 этаж
+                    ул. 50 лет Октября,д. 42, 2 этаж
                   </p>
 
                 </li>
-                <li class="page-footer__item">
-                  &copy; 2018 компания Transhub24 Портал для поиска перевозчиков и грузоотправителей.
+                <li class="page-footer__address-item">
+                  &copy; 2018 компания Transhub24
+                  <p>
+                    Портал для поиска перевозчиков и грузоотправителей.
+                  </p>
                 </li>
               </ul>
             </div>
@@ -305,13 +310,7 @@
               </ul>
             </div>
 
-
-
-
-
-
-
-            <div class="page-footer__column">
+            <div class="page-footer__column page-footer__column--mobile">
               <p class="page-footer__caption page-footer__caption--social">Мы в соц.сетях</p>
               <ul class="page-footer__list social-list">
                 <li class="social-list__item">
@@ -364,6 +363,41 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div class="page-footer__row page-footer__row--color">
+          <div class="page-footer__row-inner page-footer__second-row container">
+            <a class="page-footer__logo">
+              <picture>
+                <source type="image/webp" srcset="img/logo-page-footer@1x.webp 1x, img/logo-page-footer@2x.webp 2x">
+                <img src="img/logo-page-footer@1x.png" srcset="img/logo-page-footer@2x.png" width="86" height="33" alt="Логотип компании Transhub24">
+              </picture>
+            </a>
+
+            <ul class="page-footer__user-agreement">
+              <li class="page-footer__user-agreement-item">
+                <a href="#" class="page-footer__user-agreement-link">
+                  Пользовательское соглашение
+                </a>
+              </li>
+              <li class="page-footer__user-agreement-item">
+                <a href="#" class="page-footer__user-agreement-link">
+                  Правила размещения информации
+                </a>
+              </li>
+              <li class="page-footer__user-agreement-item">
+                <a href="#" class="page-footer__user-agreement-link">
+                  Политика конфиденциальности
+                </a>
+              </li>
+            </ul>
+
+            <a href="https://5corners.ru/" class="page-footer__developer-logo">
+              <picture>
+                <source type="image/webp" srcset="img/5corners@1x.webp 1x, img/5corners@2x.webp 2x">
+                <img src="img/5corners@1x.png" srcset="img/5corners@2x.png" width="83" height="22" alt="Логотип компании 5 углов">
+              </picture>
+            </a>
           </div>
         </div>
     </footer>
