@@ -46,9 +46,21 @@
     margin-bottom: 24px;
   }
 
+  address {
+    font-style: normal;
+  }
+
   p {
     margin: 0;
   }
+}
+
+.page-footer__phone-link {
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+
+  .color-link(#ffffff);
 }
 
 .page-footer__item {
@@ -137,11 +149,12 @@
   }
 }
 
-@media (min-width: 0) and (max-width: 929px){
+@media (min-width: 0) and (max-width: 929px) {
   .page-footer__row-inner {
     flex-direction: column;
     align-items: center;
   }
+
   .page-footer__column {
     display: none;
 
