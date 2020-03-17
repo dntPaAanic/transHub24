@@ -18,7 +18,7 @@ navToggle.addEventListener('click', function() {
 function scrollMenu() {
   var header = document.querySelector(".page-header");
   window.addEventListener("scroll", function () {
-    if (window.pageYOffset > 788 && window.innerWidth >= 1220 || window.pageYOffset > 0 && window.innerWidth < 1440) {
+    if (window.pageYOffset > 788 && window.innerWidth >= 1220 || window.pageYOffset > 0 && window.innerWidth < 1220) {
       header.classList.add("page-header--scrolled");
     } else {
       header.classList.remove("page-header--scrolled");
